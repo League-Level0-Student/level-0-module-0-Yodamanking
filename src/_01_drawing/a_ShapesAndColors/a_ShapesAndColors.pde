@@ -46,3 +46,26 @@ fill(#FFA850);
 // 7. Now use all these shapes and colors to draw a picture of your own design. 
 
 // MAKE SURE YOU SAVE YOUR CODE 
+
+void setup(){
+  
+  size (500, 500);
+    background(100);
+fill(#E87731);
+ellipse(50, 50, 100, 12);
+fill(#5297C1);
+rect(12, 345, 10, 120);
+fill(#7DAD52);
+triangle (12, 345, 12, 50, 100, 60);
+fill(#C025D8);
+rect(100, 100, 300, 300);
+
+}
+
+void draw() {
+
+  fill(250);
+  ellipse(mouseX, mouseY, 20, 20);
+  rect(mouseX, mouseY, mouseX, mouseY);
+}
+  

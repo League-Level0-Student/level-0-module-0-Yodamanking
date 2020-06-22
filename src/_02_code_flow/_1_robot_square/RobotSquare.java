@@ -14,6 +14,8 @@ public class RobotSquare {
  
     	// This code makes a new Robot
     	Robot rob = new Robot();
+    	rob.penDown();
+    	rob.setSpeed(100);
 
         // Put the robot's pen down so it can draw
 		//        Use the     rob.penDown();   command.
@@ -24,11 +26,16 @@ public class RobotSquare {
 
         // DRAW.  Draw a line
     	//		Use the     rob.move(); command
-
+    	for (int i = 0; i < 4; i++) {
+			rob.move(150);
+			rob.turn(90);
+			
+		}
+    	rob.move(150);
 
 		// TURN.  Turn 90 degrees
     	//      Use the     rob.turn();  command
-
+    	rob.turn(90);
 
         // LOOP.  Now put the DRAW and TURN code into a for loop to repeat 4 times.
 		//        Did your Robot draw a square?
